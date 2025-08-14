@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./src/images/favicon-16x16.png" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="aviso">
+        <h1>
+          FICOU COM DÚVIDA?
+          <br />
+          NOS MANDE UMA MENSAGEM!
+        </h1>
+        <p>
+          caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e
+          entraremos em contato em menos de 24h.
+        </p>
+      </section>
+
+      <section class="formulario-container">
+        <form id="formulario" class="formulario">
+          <div class="conteudo-formulario">
+            <label for="nome-de-usuario"></label>
+            <input type="text"
+              id="nomeUsuario"
+              placeholder="Nome completo *"
+            >
+            <a>Aqui vai a mensagem de erro...</a>
+          </div>
+          
+          <div class="conteudo-formulario">
+            <label for="email"></label>
+            <input type="email"
+              id="email"
+              placeholder="Email *"
+            >
+            <a>Aqui vai a mensagem de erro...</a>
+          </div>
+          
+          <div class="conteudo-formulario">
+            <label for="telefone"></label>
+            <input type="tel"
+              id="telefone"
+              placeholder="Telefone *"
+            >
+            <a>Aqui vai a mensagem de erro...</a>
+          </div>
+
+          <div class="conteudo-formulario">
+            <label for="mensagem"></label>
+            <textarea
+              id="mensagem"
+              placeholder="Mensagem *"
+              rows="5"
+              cols="40d"
+            ></textarea>
+            <a>Aqui vai a mensagem de erro...</a>
+          </div>  
+
+          <a class="campo-legenda">* campos obrigatórios</a>
+
+          <button type="submit" class="botao-enviar">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

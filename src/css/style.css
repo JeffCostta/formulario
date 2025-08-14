@@ -1,0 +1,102 @@
+body{
+    background-image: url(../images/bg-repeat.jpg);
+    background-size: contain;
+    min-height: 100vh;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    gap: 60px;
+}
+
+.container .aviso{
+    width: 100%;
+    max-width: 300px;
+    color: #FFFFFF;
+    transform: translateY(27%);
+}
+
+.container .aviso h1{
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 11px;
+}
+
+.container .aviso p{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.container .formulario-container{
+    width: 100%;
+    max-width: 340px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.container .formulario-container .conteudo-formulario{
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.conteudo-formulario input,textarea{
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1.8px solid #000000;
+    resize: none;
+}
+    
+.conteudo-formulario a{
+    position: absolute;
+    font-size: 8px;
+    color: #F52E2E;
+    bottom: -10px;
+    left: 0;
+    visibility: hidden;
+}
+
+.formulario-container .formulario .campo-legenda{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.formulario-container .formulario .botao-enviar{
+    display: block;
+    background-color: #3CCC87;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFFFFF;
+    width: 100%;
+    margin-top: 11px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.conteudo-formulario.erro input{
+    border-color: #F52E2E;
+}
+
+.conteudo-formulario.erro a{
+    color: #F52E2E;
+}
+
+.conteudo-formulario.feito input{
+    border-color: #00C22B;
+}
+
+.conteudo-formulario.feito a{
+    color: #00C22B;
+}
+
+.conteudo-formulario.erro a, .conteudo-formulario.feito a{
+    visibility: visible;
+}
